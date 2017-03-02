@@ -87,7 +87,7 @@ public class Course implements Comparable<Course> {
      * @param username the username of the professor
      */
     public void addProfessor(String username) {
-        // TODO
+        professor = username;
     }
 
     /**
@@ -98,8 +98,7 @@ public class Course implements Comparable<Course> {
      * @return whether the student was added or not
      */
     public boolean addStudent(String username) {
-        // TODO
-        return false;
+        return students.add(username);
     }
 
     /**
@@ -110,8 +109,7 @@ public class Course implements Comparable<Course> {
      * @return true if the student was removed, false if the student was not in the course
      */
     public boolean removeStudent(String username) {
-        // TODO
-        return false;
+        return students.remove(username);
     }
 
     /**

@@ -3,7 +3,5 @@
  */
 public class UserDB {
 
-    public enum UserType {
-        PROFESSOR, STUDENT
-    }
+
 }
