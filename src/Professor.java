@@ -1,5 +1,11 @@
 /**
- * Created by d1pas on 2/22/2017.
+ * Class representing a professor.
+ *
+ * @author dmp6637 (David Pastuch)
  */
-public class Professor {
+public class Professor extends User{
+
+    public Professor(String username) {
+        super(username, UserType.PROFESSOR, new CourseComparator());
+    }
 }
